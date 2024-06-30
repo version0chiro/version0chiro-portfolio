@@ -1,0 +1,52 @@
+---
+import { Image } from "astro:assets";
+import gojoImage from "../../public/hero.jpg";
+---
+
+<div class="main">
+    <Image src={gojoImage} alt={"Image of gojo"} />
+    <div class="about-me">
+        <span class="maintext">Sachin Singh Bhadoriya</span>
+        <span class="subtext">Version0Chiro</span>
+        <span class="content">Hello!</span>
+        <span class="content">Funny of you to stumble upon here</span>
+        <span class="content-2">
+            This is my personal portfolio, this is just a place where I
+            will be dumping stuff which I feel is relevant to my online
+            preference You can find more of me on my socials below
+        </span>
+        <span class="content-2">
+            You can find more about me with my socials below
+        </span>
+    </div>
+</div>
+
+<style>
+    .main {
+        font-family: "Anonymous Pro";
+        color: aliceblue;
+    }
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        padding: 0.3rem;
+    }
+    .maintext {
+        font-size: 1rem;
+        margin: 0;
+        font-weight: bold;
+    }
+    .subtext {
+        font-size: 0.88rem;
+        margin: 0;
+        margin-bottom: 0.5rem;
+    }
+    .content {
+        margin-top: 0.2rem;
+        line-height: 1rem;
+    }
+    .content-2 {
+        margin-top: 1rem;
+
+    }
+</style>

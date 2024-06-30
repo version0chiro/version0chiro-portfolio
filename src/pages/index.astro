@@ -1,0 +1,29 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+---
+
+<Layout title="Welcome to Astro.">
+	<Header />
+
+	<main>
+		<Hero />
+		<Footer />
+	</main>
+</Layout>
+
+<style>
+
+	main {
+		background-color: #1f2d34;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-left: 5px;
+		padding-right: 5px;
+		height: 100vh; /* Set the container height to the full viewport height */
+	}
+</style>
